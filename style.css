@@ -314,4 +314,30 @@ footer{
 
 .productCat div img{
   border-radius: 10px;
+  height: 240px;
+  transition: transform 500ms;
 }
+
+.productCat div img:hover{
+  transform: scale(1.05);
+  transition: transform 300ms;
+}
+
+.productCat button{
+  border: none;
+  background-color: #0f0112;
+  color: #ddc2e2;
+  padding: 8px;
+  font-size: .9rem;
+  border-radius: 5px;
+  width: 50%;
+  transition: transform 500ms;
+}
+
+.productCat button:hover{
+  background-color: #50255a;
+  transform: scale(1.05);
+  transition: transform 300ms;
+}
+
+/* aboutUs.html Article Section */
