@@ -316,6 +316,7 @@ footer{
   border-radius: 10px;
   height: 240px;
   transition: transform 500ms;
+  cursor: pointer;
 }
 
 .productCat div img:hover{
@@ -332,6 +333,7 @@ footer{
   border-radius: 5px;
   width: 50%;
   transition: transform 500ms;
+  cursor: pointer;
 }
 
 .productCat button:hover{
