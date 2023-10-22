@@ -343,3 +343,66 @@ footer{
 }
 
 /* aboutUs.html Article Section */
+
+#aboutUs h2{
+  padding: 3rem;
+}
+
+.shopStart{
+  display: flex;
+  flex-direction: row;
+  margin: 0 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shopStart img{
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.shopInfo{
+  padding: 2rem;
+}
+
+.owner{
+  display: flex;
+  flex-direction: row;
+  margin: 0 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.owner img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.ownerMot{
+  padding: 2rem;
+}
+
+@media screen and (max-width:850px) {
+  .shopStart, .owner{
+    flex-flow: wrap;
+  }
+}
+
+.awords{
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.awords li{
+  padding: 5px;
+}
+
+.awords img{
+  padding: 0 0 2rem;
+  border-radius: 10px;
+}
