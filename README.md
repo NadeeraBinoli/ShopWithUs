@@ -1,2 +1,2 @@
 # ShopWithUs
- Shop With Us Store oe-commerce website
+ Shop With Us Store e-commerce website
