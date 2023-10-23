@@ -252,7 +252,7 @@ a{
 }
 
 .category h3{
-  color: #23042a;
+  color: #e9e1eb;
   font-size: 1.5rem;
 }
 
@@ -260,9 +260,9 @@ a{
   position: absolute;
   height: 100%;
   width: 100%;
-  opacity: 50%;
+  opacity: .7;
   transition: 0.5s ease;
-  background-color: #ddc2e2;
+  background-color: #331439;
   border-radius: 10px;
 }
 
@@ -422,7 +422,7 @@ a{
 }
 
 .formDiv{
-  background-color: #c051d9;
+  background-color: #ce95db;
   padding: 1rem 3rem 3rem;
   border-radius: 10px;
 }
@@ -468,7 +468,7 @@ a{
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  background-color: #c051d9;
+  background-color: #ce95db;
   padding: 0 15px;
 }
 
