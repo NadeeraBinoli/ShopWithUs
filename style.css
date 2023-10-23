@@ -68,10 +68,11 @@ article h2{
  border: none;
  background-color: #f9f9f9;
  padding: 12px;
+ font-size: .9rem;
  border-radius: 20px;
 }
 
-.btnDiv a:hover, .btnDiv a:focus{
+.btnDiv a:hover, .btnDiv a:focus, #focus{
   background-color: #321439; 
   color: #f9f9f9;
  }
@@ -400,11 +401,114 @@ footer{
   align-items: center;
 }
 
+.awordList{
+  padding: 2rem;
+}
+
 .awords li{
   padding: 5px;
 }
 
-.awords img{
-  padding: 0 0 2rem;
+.awordImg{
+  background-image: url(images/aword.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
+/* login.html signup.html Article Section */
+
+#formPage{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#formPage .linkFeild a{
+  color: #58026b;
+}
+
+.formDiv{
+  background-color: #c051d9;
+  padding: 1rem 3rem 3rem;
   border-radius: 10px;
+}
+
+.feild{
+  padding: 10px;
+}
+
+.inputFeild input{
+  padding: 8px;
+  width: 92%;
+}
+
+.buttonFeild button{
+  border: none;
+  background-color: #0f0112;
+  color: #ddc2e2;
+  padding: 8px;
+  font-size: .9rem;
+  border-radius: 5px;
+  width: 100%;
+  transition: transform 500ms;
+  cursor: pointer;
+}
+
+.buttonFeild button:hover{
+  background-color: #50255a;
+  transform: scale(1.05);
+  transition: transform 300ms;
+}
+
+.line{
+  position: relative;
+  height:1px;
+  width: 100%;
+  margin:20px 0;
+  background-color: #0f0112;
+}
+
+.line::before{
+  content: 'or';
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: #c051d9;
+  padding: 0 15px;
+}
+
+#formPage .media a{
+  display: flex;
+  border: 2px #0f0112 solid;
+  padding: 8px;
+  font-size: .9rem;
+  border-radius: 5px;
+  width: 92%;
+  transition: transform 500ms;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.fb{
+  background-color: rgb(85, 85, 231);
+}
+
+.google{
+  background-color: rgb(232, 245, 230);
+}
+
+#formPage .media a:hover{
+  transform: scale(1.05);
+  transition: transform 300ms;
+}
+
+.media i{
+  padding: 2px 5px 0;
 }
