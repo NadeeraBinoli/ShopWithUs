@@ -8,10 +8,6 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-h1{
-  color: #f9f9f9;
-}
-
 article h2{
   text-align: center;
   padding: 1rem;
@@ -29,12 +25,24 @@ article h2{
   justify-content: space-between;
 }
 
+.logoName img{
+  width: 10rem;
+}
+
+@media screen and (max-width:426px) {
+  .logoName img{
+    width: 8rem;
+  }
+
+}
+
 .search{
   display: flex;
   align-items: center;
   text-align: center;
   border-radius: 20px;
   background-color: #f9f9f9;
+  height: 42px;
 }
 
 .search input{
@@ -62,6 +70,7 @@ article h2{
   align-items: center;
   text-align: center;
   border-radius: 20px;
+  height: 42px;
 }
 
 .btnDiv a{
@@ -77,8 +86,20 @@ article h2{
   color: #f9f9f9;
  }
 
-/* Navigation Bar */
+@media screen and (max-width:885px) {
+  .logoDiv{
+    gap:5px;
+    flex-flow: nowrap;
+  }
+}
 
+@media screen and (max-width:595px) {
+  .search input{
+    display: none;
+  }
+}
+
+/* Navigation Bar */
 .navList{
   list-style: none;
   display: flex;
@@ -108,20 +129,22 @@ article h2{
   transform: scaleX(0);
 }
 
-.hlink::before{
-  width: 42px;
-}
-
-.plink::before{
-  width: 55px;
-}
-
-.alink::before{
-  width: 65px;
-} 
-
-.navList li a:hover::before ,.navList li a:focus::before{
-  transform: scaleX(1);
+@media screen and (min-width:885px) {
+  .hlink::before{
+    width: 42px;
+  }
+  
+  .plink::before{
+    width: 55px;
+  }
+  
+  .alink::before{
+    width: 65px;
+  } 
+  
+  .navList li a:hover::before ,.navList li a:focus::before{
+    transform: scaleX(1);
+  }
 }
 
 .focusPage{
@@ -131,6 +154,62 @@ article h2{
 a{
   text-decoration: none;
   color: black;
+}
+
+/* navigation bar - mobile size*/
+.hamberger-menue {
+  background: url("images/hamberger-menu.svg");
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.menue-close {
+  background: url("images/menue-close.svg");
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width:885px) {
+
+  /* hamberger-menue button */
+  .hamberger-menue {
+    display: block;
+  }
+
+  .navList {
+    position: fixed;
+    z-index: 1;
+    inset: 0 40% 0 0;
+    background-color: hsl(0 0% 52% /0.95);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5rem 0 0 6rem;
+    transition: transform 350ms ease-out;
+    transform: translateX(-100%);
+  }
+
+  .navList[data-visible="true"] {
+    transform: translateX(-0%);
+  }
+
+  nav li, nav a {
+    background-color: transparent;
+  }
+
+  .menue-close {
+    position: absolute;
+    display: block;
+    z-index: 99;
+    left: 2.0rem;
+    top: 2.3rem;
+  }
 }
 
 /* Index.html Article Section */
@@ -151,7 +230,7 @@ a{
 .bannerOverlay{
   position: absolute;
   width: 50%;
-  height: 80%;
+  height: 90%;
   padding:0 1.5rem;
   opacity: 50%;
   transition: 0.5s ease;

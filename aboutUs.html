@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ShopWithUs</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="style.css">
   <!-- font awesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -16,11 +17,13 @@
 <body>
   <header>
     <div class="logoDiv">
+      <button type="button" class="hamberger-menue" aria-controls="navList" aria-expanded="false"><span class="sr-only"></span></button>
       <div class="logoName">
-        <h1>ShopWithUs Store</h1>
+        <img src="images/logo.png" alt="">
       </div>
       <nav>
-        <ul class="navList">
+        <ul data-visible="false" id="navList" class="navList">
+          <button class="menue-close" type="button" ></button>
           <li><a class="hlink" href="index.html">Home</a></li>
           <li><a class="plink" href="product.html">Product</a></li>
           <li class="focusPage"><a class="alink" href="aboutUs.html">About Us</a></li>
@@ -151,5 +154,7 @@
       <p>Copyright@Shop All right reserved Contact us : +91 90000 123 221</p>
     </div>
   </footer>
+    <!-- javascript file -->
+    <script src="index.js" charset="utf-8"></script>
 </body>
 </html>
